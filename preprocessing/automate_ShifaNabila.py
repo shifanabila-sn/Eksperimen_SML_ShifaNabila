@@ -44,3 +44,10 @@ def preprocess_data(raw_data_path):
     print(f"Data preprocessed and saved to instax_sales_preprocessing.csv. Shape: {df_final.shape}")
 
     return df_final
+
+    if __name__ == "__main__":
+
+           raw_data_file_path = "namadataset_raw/instax_sales_transaction_data.csv"
+            preprocessed_df = preprocess_data(raw_data_file_path)
+
+    print("Preprocessing selesai via script otomatis.")
