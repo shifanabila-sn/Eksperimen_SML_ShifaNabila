@@ -45,9 +45,12 @@ def preprocess_data(raw_data_path):
 
     return df_final
 
-    if __name__ == "__main__":
+# Pastikan 'if' ini TIDAK memiliki spasi di depannya
+if __name__ == "__main__":
+    # Baris ini harus di-indentasi 4 spasi dari 'if'
+    raw_data_file_path = "namadataset_raw/instax_sales_transaction_data.csv"
+    # Baris ini juga harus di-indentasi 4 spasi dari 'if'
+    preprocessed_df = preprocess_data(raw_data_file_path)
 
-           raw_data_file_path = "namadataset_raw/instax_sales_transaction_data.csv"
-            preprocessed_df = preprocess_data(raw_data_file_path)
-
+    # Baris ini juga harus di-indentasi 4 spasi dari 'if'
     print("Preprocessing selesai via script otomatis.")
