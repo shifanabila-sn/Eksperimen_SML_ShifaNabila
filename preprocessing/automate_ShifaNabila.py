@@ -47,9 +47,8 @@ def preprocess_data(raw_data_path):
         print(f"[ERROR] An error occurred during preprocessing: {e}")
         import traceback
         traceback.print_exc()
-        raise # Re-raise the exception after printing for GitHub Actions to catch
+        raise 
 
-# Bagian ini sudah benar, pastikan path data mentah sesuai
 if __name__ == "__main__":
     print("[Log] Script started from __main__ block.")
     raw_data_file_path = "namadataset_raw/instax_sales_transaction_data.csv"
